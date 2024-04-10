@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{8924C743-B84E-4B77-8944-0E718815E1D0}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.LegacyAppConsumer PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="LegacyAppTests/UserServiceTests.cs">
+    <Files>
+      <File FileName="LegacyAppConsumer/Program.cs" />
+      <File FileName="LegacyAppTests/UserServiceTests.cs" Line="1" Column="1" />
+      <File FileName="LegacyAppTests/Usings.cs" Line="1" Column="1" />
+      <File FileName="LegacyApp/UserService.cs" Line="18" Column="12" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RefactoringExample">
+            <Node name="LegacyApp" expanded="True" />
+            <Node name="LegacyAppConsumer" expanded="True" />
+            <Node name="LegacyAppTests" expanded="True">
+              <Node name="UserServiceTests.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>
