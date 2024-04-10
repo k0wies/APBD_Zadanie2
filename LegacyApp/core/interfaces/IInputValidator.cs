@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace LegacyApp.core.interfaces
 {
-    internal interface IInputValidator
+    public interface IInputValidator
     {
+        public bool ValidateEmail(string email);
+        public bool ValidateName(string firstName, string lastName);
+        public bool ValidateAge(DateTime dateOfBirth);
+
     }
 }

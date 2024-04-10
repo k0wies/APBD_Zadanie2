@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace LegacyApp.core.interfaces
 {
-    internal interface IClientRepository
+    public interface IClientRepository
     {
+        internal Client GetById(int clientId);
     }
 }
