@@ -1,22 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "2kaJC43Rrz/t+xpO1BXMc2Ctz3U2Fr3Rg1WLpLNrolpn2AmAyaRrEg/SxpFeFMPq9UZOnqUmeUWa0YoNiyBPag==",
+  "dgSpecHash": "t6wP3DE5STQwroF57ibDspl3lo/MHeDQBDdVLfDQgD2QGZ/SKVyxGm+lPDiUwLJxH64eDxiTgecOSHMJ7eEDuQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\s24904\\Desktop\\zadanie\\LegacyAppTests\\LegacyAppTests.csproj",
+  "projectFilePath": "/Users/bartek/Downloads/GITara/APBD_Zadanie2/LegacyAppTests/LegacyAppTests.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\s24904\\.nuget\\packages\\coverlet.collector\\3.2.0\\coverlet.collector.3.2.0.nupkg.sha512",
-    "C:\\Users\\s24904\\.nuget\\packages\\microsoft.codecoverage\\17.5.0\\microsoft.codecoverage.17.5.0.nupkg.sha512",
-    "C:\\Users\\s24904\\.nuget\\packages\\microsoft.net.test.sdk\\17.5.0\\microsoft.net.test.sdk.17.5.0.nupkg.sha512",
-    "C:\\Users\\s24904\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\s24904\\.nuget\\packages\\microsoft.testplatform.objectmodel\\17.5.0\\microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
-    "C:\\Users\\s24904\\.nuget\\packages\\microsoft.testplatform.testhost\\17.5.0\\microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
-    "C:\\Users\\s24904\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
-    "C:\\Users\\s24904\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
-    "C:\\Users\\s24904\\.nuget\\packages\\nuget.frameworks\\5.11.0\\nuget.frameworks.5.11.0.nupkg.sha512",
-    "C:\\Users\\s24904\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
-    "C:\\Users\\s24904\\.nuget\\packages\\nunit.analyzers\\3.6.1\\nunit.analyzers.3.6.1.nupkg.sha512",
-    "C:\\Users\\s24904\\.nuget\\packages\\nunit3testadapter\\4.4.2\\nunit3testadapter.4.4.2.nupkg.sha512",
-    "C:\\Users\\s24904\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
+    "/Users/bartek/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
+    "/Users/bartek/.nuget/packages/microsoft.codecoverage/17.5.0/microsoft.codecoverage.17.5.0.nupkg.sha512",
+    "/Users/bartek/.nuget/packages/microsoft.net.test.sdk/17.5.0/microsoft.net.test.sdk.17.5.0.nupkg.sha512",
+    "/Users/bartek/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/bartek/.nuget/packages/microsoft.testplatform.objectmodel/17.5.0/microsoft.testplatform.objectmodel.17.5.0.nupkg.sha512",
+    "/Users/bartek/.nuget/packages/microsoft.testplatform.testhost/17.5.0/microsoft.testplatform.testhost.17.5.0.nupkg.sha512",
+    "/Users/bartek/.nuget/packages/netstandard.library/2.0.0/netstandard.library.2.0.0.nupkg.sha512",
+    "/Users/bartek/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/bartek/.nuget/packages/nuget.frameworks/5.11.0/nuget.frameworks.5.11.0.nupkg.sha512",
+    "/Users/bartek/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
+    "/Users/bartek/.nuget/packages/nunit.analyzers/3.6.1/nunit.analyzers.3.6.1.nupkg.sha512",
+    "/Users/bartek/.nuget/packages/nunit3testadapter/4.4.2/nunit3testadapter.4.4.2.nupkg.sha512",
+    "/Users/bartek/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
   ],
   "logs": []
 }

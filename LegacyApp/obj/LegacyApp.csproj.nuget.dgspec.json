@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\s24904\\Desktop\\zadanie\\LegacyApp\\LegacyApp.csproj": {}
+    "/Users/bartek/Downloads/GITara/APBD_Zadanie2/LegacyApp/LegacyApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\s24904\\Desktop\\zadanie\\LegacyApp\\LegacyApp.csproj": {
+    "/Users/bartek/Downloads/GITara/APBD_Zadanie2/LegacyApp/LegacyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\s24904\\Desktop\\zadanie\\LegacyApp\\LegacyApp.csproj",
+        "projectUniqueName": "/Users/bartek/Downloads/GITara/APBD_Zadanie2/LegacyApp/LegacyApp.csproj",
         "projectName": "LegacyApp",
-        "projectPath": "C:\\Users\\s24904\\Desktop\\zadanie\\LegacyApp\\LegacyApp.csproj",
-        "packagesPath": "C:\\Users\\s24904\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\s24904\\Desktop\\zadanie\\LegacyApp\\obj\\",
+        "projectPath": "/Users/bartek/Downloads/GITara/APBD_Zadanie2/LegacyApp/LegacyApp.csproj",
+        "packagesPath": "/Users/bartek/.nuget/packages/",
+        "outputPath": "/Users/bartek/Downloads/GITara/APBD_Zadanie2/LegacyApp/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\s24904\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/bartek/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -55,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.407/RuntimeIdentifierGraph.json"
         }
       }
     }

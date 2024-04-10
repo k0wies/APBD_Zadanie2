@@ -11,11 +11,11 @@ namespace LegacyApp
         private IInputValidator _inputValidator;
         private IClientRepository _clientRepository;
 
-        public UserService()
-        {
-            _inputValidator = new InputValidator();
-            _clientRepository = new ClientRepository();
-        }
+        //public UserService()
+        //{
+        //    _inputValidator = new InputValidator();
+        //    _clientRepository = new ClientRepository();
+        //}
 
         public bool AddUser(string firstName, string lastName, string email, DateTime dateOfBirth, int clientId)
         {

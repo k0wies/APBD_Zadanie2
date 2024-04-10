@@ -27,34 +27,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\s24904\\.nuget\\packages\\": {}
+    "/Users/bartek/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\s24904\\Desktop\\zadanie\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
+      "projectUniqueName": "/Users/bartek/Downloads/GITara/APBD_Zadanie2/LegacyAppConsumer/LegacyAppConsumer.csproj",
       "projectName": "LegacyAppConsumer",
-      "projectPath": "C:\\Users\\s24904\\Desktop\\zadanie\\LegacyAppConsumer\\LegacyAppConsumer.csproj",
-      "packagesPath": "C:\\Users\\s24904\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\s24904\\Desktop\\zadanie\\LegacyAppConsumer\\obj\\",
+      "projectPath": "/Users/bartek/Downloads/GITara/APBD_Zadanie2/LegacyAppConsumer/LegacyAppConsumer.csproj",
+      "packagesPath": "/Users/bartek/.nuget/packages/",
+      "outputPath": "/Users/bartek/Downloads/GITara/APBD_Zadanie2/LegacyAppConsumer/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\s24904\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/bartek/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\s24904\\Desktop\\zadanie\\LegacyApp\\LegacyApp.csproj": {
-              "projectPath": "C:\\Users\\s24904\\Desktop\\zadanie\\LegacyApp\\LegacyApp.csproj"
+            "/Users/bartek/Downloads/GITara/APBD_Zadanie2/LegacyApp/LegacyApp.csproj": {
+              "projectPath": "/Users/bartek/Downloads/GITara/APBD_Zadanie2/LegacyApp/LegacyApp.csproj"
             }
           }
         }
@@ -84,7 +82,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.407/RuntimeIdentifierGraph.json"
       }
     }
   }
