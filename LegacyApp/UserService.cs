@@ -11,6 +11,7 @@ namespace LegacyApp
         private IInputValidator _inputValidator;
         private IClientRepository _clientRepository;
 
+
         public UserService()
         {
             _inputValidator = new InputValidator();
@@ -19,6 +20,7 @@ namespace LegacyApp
 
         public bool AddUser(string firstName, string lastName, string email, DateTime dateOfBirth, int clientId)
         {
+            //Input Validation
             if(!_inputValidator.ValidateName(firstName, lastName))
             {
                 return false;
@@ -34,9 +36,7 @@ namespace LegacyApp
                 return false;
             }
 
-            //DIP
-            var clientRepository = new ClientRepository();
-            var client = clientRepository.GetById(clientId);
+            var client = _clientRepository.GetById(clientId);
 
             var user = new User
             {
@@ -46,6 +46,8 @@ namespace LegacyApp
                 FirstName = firstName,
                 LastName = lastName
             };
+
+            //var clientValidator = 
 
             //DIP OCP
             if (client.Type == "VeryImportantClient")
