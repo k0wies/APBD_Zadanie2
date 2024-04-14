@@ -56,7 +56,7 @@ namespace LegacyApp
                 LastName = lastName
             };
 
-            //var clientValidator = 
+            
 
             //DIP OCP
             if (client.Type == "VeryImportantClient")

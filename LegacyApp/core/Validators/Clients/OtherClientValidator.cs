@@ -1,11 +1,18 @@
-﻿//using System;
-//namespace LegacyApp.core.Validators.Clients
-//{
-//	public class OtherClientValidator
-//	{
-//		public OtherClientValidator()
-//		{
-//		}
-//	}
-//}
+﻿using System;
+using LegacyApp.core.interfaces;
+
+namespace LegacyApp.core.Validators.Clients
+{
+	public class OtherClientValidator : ClientValidator
+	{
+		public OtherClientValidator(IUserCredit userCredit) : base(userCredit)
+		{
+		}
+
+        public override void CreditCheck(ref User user)
+        {
+            user.HasCreditLimit = true;
+        }
+    }
+}
 

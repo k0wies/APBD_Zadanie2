@@ -1,11 +1,18 @@
 ﻿using System;
+using LegacyApp.core.interfaces;
+
 namespace LegacyApp.core.Validators.Clients
 {
-	public class ImportantClientValidator
+	public class ImportantClientValidator : ClientValidator
 	{
-		public ImportantClientValidator()
-		{
+		public ImportantClientValidator(IUserCredit userCredit) : base(userCredit)
+        {
 		}
-	}
+
+        public override void CreditCheck(ref User user)
+        {
+            user.HasCreditLimit = true;
+        }
+    }
 }
 
