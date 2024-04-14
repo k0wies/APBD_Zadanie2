@@ -1,6 +1,7 @@
 ﻿using LegacyApp.core.DAL.Repositories;
 using LegacyApp.core.DAL.Services;
 using LegacyApp.core.interfaces;
+using LegacyApp.core.Validators.Clients;
 using LegacyApp.core.Validators.Users;
 using System;
 
@@ -11,13 +12,15 @@ namespace LegacyApp
         private IInputValidator _inputValidator;
         private IClientRepository _clientRepository;
         private ICreditLimitService _creditService;
-
+        private IValidatorFactory _validatorFactory;
+        private IUserCredit userCredit;
 
         public UserService()
         {
             _inputValidator = new InputValidator();
             _clientRepository = new ClientRepository();
             _creditService = new UserCreditService();
+            _validatorFactory = new ValidatorFactory(userCredit);
         }
 
         public UserService(IInputValidator inputValidator, IClientRepository clientRepository, ICreditLimitService creditService)
@@ -56,28 +59,11 @@ namespace LegacyApp
                 LastName = lastName
             };
 
-            
+            var clientValidator = _validatorFactory.Create(client);
 
-            //DIP OCP
-            if (client.Type == "VeryImportantClient")
-            {
-                user.HasCreditLimit = false;
-            }
-            else if (client.Type == "ImportantClient")
-            { 
-                int creditLimit = _creditService.GetCreditLimit(user.LastName, user.DateOfBirth);
-                creditLimit = creditLimit * 2;
-                user.CreditLimit = creditLimit;
-                
-            }
-            else
-            {
-                user.HasCreditLimit = true;
-                int creditLimit = _creditService.GetCreditLimit(user.LastName, user.DateOfBirth);
-                user.CreditLimit = creditLimit;
-            }
+            clientValidator.CreditCheck(ref user);
 
-            if (user.HasCreditLimit && user.CreditLimit < 500)
+            if (!clientValidator.ValidateCredit(user))
             {
                 return false;
             }

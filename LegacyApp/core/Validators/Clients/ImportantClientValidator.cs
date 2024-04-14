@@ -12,6 +12,11 @@ namespace LegacyApp.core.Validators.Clients
         public override void CreditCheck(ref User user)
         {
             user.HasCreditLimit = true;
+            int creditLimit = _userCredit.GetCreditLimit(user.LastName, user.DateOfBirth);
+            creditLimit = creditLimit * 2;
+            user.CreditLimit = creditLimit;
+
+
         }
     }
 }
