@@ -10,12 +10,21 @@ namespace LegacyApp
     {
         private IInputValidator _inputValidator;
         private IClientRepository _clientRepository;
+        private ICreditLimitService _creditService;
 
 
         public UserService()
         {
             _inputValidator = new InputValidator();
             _clientRepository = new ClientRepository();
+            _creditService = new UserCreditService();
+        }
+
+        public UserService(IInputValidator inputValidator, IClientRepository clientRepository, ICreditLimitService creditService)
+        {
+            _inputValidator = inputValidator;
+            _clientRepository = clientRepository;
+            _creditService = creditService;
         }
 
         public bool AddUser(string firstName, string lastName, string email, DateTime dateOfBirth, int clientId)
@@ -55,22 +64,17 @@ namespace LegacyApp
                 user.HasCreditLimit = false;
             }
             else if (client.Type == "ImportantClient")
-            {
-                using (var userCreditService = new UserCreditService())
-                {
-                    int creditLimit = userCreditService.GetCreditLimit(user.LastName, user.DateOfBirth);
-                    creditLimit = creditLimit * 2;
-                    user.CreditLimit = creditLimit;
-                }
+            { 
+                int creditLimit = _creditService.GetCreditLimit(user.LastName, user.DateOfBirth);
+                creditLimit = creditLimit * 2;
+                user.CreditLimit = creditLimit;
+                
             }
             else
             {
                 user.HasCreditLimit = true;
-                using (var userCreditService = new UserCreditService())
-                {
-                    int creditLimit = userCreditService.GetCreditLimit(user.LastName, user.DateOfBirth);
-                    user.CreditLimit = creditLimit;
-                }
+                int creditLimit = _creditService.GetCreditLimit(user.LastName, user.DateOfBirth);
+                user.CreditLimit = creditLimit;
             }
 
             if (user.HasCreditLimit && user.CreditLimit < 500)
@@ -79,16 +83,6 @@ namespace LegacyApp
             }
 
             UserDataAccess.AddUser(user);
-            return true;
-        }
-
-        public bool ValidateEmail(string email)
-        {
-            if (!email.Contains("@") && !email.Contains("."))
-            {
-                return false;
-            }
-
             return true;
         }
     }
